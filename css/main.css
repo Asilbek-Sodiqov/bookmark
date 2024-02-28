@@ -1462,6 +1462,10 @@ main {
   margin-bottom: 12px;
 }
 
+.form-section__summary:hover {
+  color: var(--main-hover-color);
+}
+
 .form-section__summary::after {
   display: inline-block;
   width: 13px;
@@ -1482,10 +1486,6 @@ main {
   line-height: 29px;
   letter-spacing: 0px;
   text-align: left;
-}
-
-.form-section__summary-title:hover {
-  color: var(--main-hover-color);
 }
 
 details[open] .form-section__summary::after {
