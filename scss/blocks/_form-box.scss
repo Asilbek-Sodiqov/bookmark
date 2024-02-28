@@ -1,0 +1,116 @@
+@use "../mixins" as m;
+@use "../variables" as v;
+
+.form-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--main-bg-color);
+}
+
+.form-box__line {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 38px;
+  color: #fff;
+  letter-spacing: 4.615385055541992px;
+  text-align: center;
+}
+
+.form-box__title {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 32px;
+  color: #fff;
+  letter-spacing: -0.07500000298023224px;
+  text-align: center;
+}
+
+.form-box__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.form-box__input {
+  width: 100%;
+  padding: 14.8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.form-box__input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #242a4540;
+}
+
+.form-box__btn {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: var(--main-hover-color);
+  text-align: center;
+}
+
+.form-box__btn:hover {
+  color: var(--main-hover-color);
+  border-color: var(--main-hover-color);
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 375px) {
+  .form-box__line {
+    font-size: 12px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .form-box {
+    padding-top: 58px;
+    padding-bottom: 74px
+  }
+
+  .form-box__line {
+    font-size: 13px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 24px;
+  }
+
+  .form-box__title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.10000000149011612px;
+    margin-bottom: 36px;
+  }
+
+  .form-box__wrapper {
+    width: 442px;
+    margin: 0 auto;
+  }
+
+  .form-box__form {
+    flex-direction: row;
+    column-gap: 16px;
+  }
+
+  .form-box__input {
+    width: 300px;
+  }
+
+  .form-box__btn {
+    width: 126px;
+  }
+}
